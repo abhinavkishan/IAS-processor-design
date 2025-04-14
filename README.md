@@ -1,7 +1,7 @@
 # IAS Processor Design
 
 ## Overview
-This project implements an IAS processor in C++ with a 200 MHz clock frequency, simulating the fetch, decode, and execute cycles according to the IAS architecture. It includes an assembler to convert IAS assembly programs into machine code and supports custom instructions with new opcodes.
+This project implements an IAS processor in C++, simulating the fetch, decode, and execute cycles according to the IAS architecture. It includes an assembler to convert IAS assembly programs into machine code and supports custom instructions with new opcodes.
 
 ## Features
 - IAS processor simulation with internal signal generation for MemRead and MemWrite.

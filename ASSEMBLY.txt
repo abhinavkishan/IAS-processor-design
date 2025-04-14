@@ -1,0 +1,24 @@
+LOAD    M[100];COMP    M[103]
+JP+M[0:19,002];JUMP    M[009]
+LOAD    M[100];DIVI    M[101]
+LOADMQMXM[100];LOA(AC-MQ)
+LOAD    M[120];ADD     M[102]
+STOR[0:19,006];LOAD  (MQ)
+STOR    M[200];LOAD    M[102]
+ADD     M[104];STOR    M[102]
+JP+M[0:19,000];NO       P
+LOAD    M[102];SUB     M[104]
+STOR    M[102];NO       P
+LOAD    M[102];COMP    M[105]
+JP+M[0:19,013];JUMP    M[020]
+LOAD    M[106];MUL     M[107]
+STOR    M[106];NO       P
+LOAD    M[120];ADD     M[102]
+STOR[0:19,017];NO       P
+LOAD    M[200];ADD     M[106]
+STOR    M[106];LOAD    M[102]
+SUB     M[104];STOR    M[102]
+JP+M[0:19,011];LOAD    M[106]
+LOAD    M[106];NO       P
+MUL     M[107];ADD     M[500]
+STOR    M[106];NO      P[
